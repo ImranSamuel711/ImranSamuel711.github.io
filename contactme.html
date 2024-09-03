@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <header>
-        <h1>
-            <p>contactme/p>  
-            <p>Name: Imran Loius Samuel</p>
-            <p>Email: samjohndara@gmail.com</p>
-            <p>contact: +923406930544</p>
-         </h1><          
-    </header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input, textarea {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Me</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Imran Samuel:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">samjohndara@gmail.com:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Feel free to contact:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
     
